@@ -24,8 +24,8 @@
 ## 📁 Repository Contents
 
 - `data/`: Placeholder or linked directory for de-identified data (if publicly shareable)
-- `code/`: Scripts used for text preprocessing, topic modeling, and qualitative clustering
-- `docs/`: Project summary documents
+- `code/`: Scripts used for data analysis, platform development
+- `docs/`: Project summary documents, navigator materials
 - `README.md`: This file
 
 ## 🌎 Intended Impact
