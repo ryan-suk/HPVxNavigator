@@ -24,7 +24,7 @@
 ## 📁 Repository Contents
 
 - `data/`: Placeholder or linked directory for de-identified data (if publicly shareable)
-- `code/`: Scripts used for data analysis, platform development
+- `code/`: Scripts used for data analysis and navigation tool development
 - `docs/`: Project summary documents, navigator materials
 - `README.md`: This file
 
