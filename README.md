@@ -12,7 +12,7 @@
 
 **HPVx Navigator** is a web‑based navigation tool that guides people to practical, state‑specific pathways for getting the free/low-cost human papillomavirus (HPV) vaccine and community resources for social needs that could help access healthcare services. It delivers clear eligibility screening, step‑by‑step access instructions, and community resource referrals—all written in plain, approachable language. This project is **funded through the American Cancer Society's Research Scholar Grant** titled "The Vaccines for Children Program and HPV Vaccination among Medicaid/CHIP Enrolled Children in Texas: Public Health Impact and Areas for Improvement".
 
-## >> 🤖 To check the sub-project "State Focus Hub: GA & NC" >>> 👉[Click here](https://github.com/ryan-suk/HPVxNavigator-GA-NC)
+## >> 🤖 To check the "State Focus Hub: GA & NC" >>> 👉[Click here](https://github.com/ryan-suk/HPVxNavigator-GA-NC)
 
 ## 👥 Investigators
 
