@@ -14,14 +14,9 @@
 
 ## >> 🤖 To check the "State Focus Hub: GA & NC" >>> 👉[Click here](https://github.com/ryan-suk/HPVxNavigator-GA-NC)
 
-## 👥 Investigators
+## 👥 Principal Investigator
 
 - Ryan Suk, PhD — Emory University (Principal Investigator)
-- Cici Bauer, PhD - UTHealth Houston
-- Jessica Wells, PhD - Emory University
-- Paula Cuccaro, PhD - UTHealth Houston
-- Young-Rock Hong, PhD - Emory University
-- Alexander Tsai, MD, PhD - Harvard Medical School
 
 ## 🔑 Core Features
 
