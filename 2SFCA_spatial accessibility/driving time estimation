@@ -1,0 +1,68 @@
+import pandas as pd
+from geopy.distance import geodesic
+import openrouteservice
+import time
+
+# --- CONFIG ---
+ORS_KEY = 'your API key here'
+DISTANCE_THRESHOLD_MILES = 40
+output_path = r'C:\drive_times.csv'
+
+# --- LOAD DATA ---
+zcta_df = pd.read_csv(r'C:\zcta_score_data.csv')  # Must include 'ZCTA', 'lat', 'lon'
+provider_df = pd.read_csv(r'C:\vfc_providers_geocoded.csv')  # Must include 'id', 'lat', 'lon'
+
+# --- ORS Client ---
+client = openrouteservice.Client(key=ORS_KEY)
+
+# --- Retry wrapper ---
+def get_drive_time(origin, dest, max_retries=3, wait_time=5):
+    for attempt in range(max_retries):
+        try:
+            route = client.directions(
+                coordinates=[origin, dest],
+                profile='driving-car',
+                format='geojson'
+            )
+            return route['features'][0]['properties']['summary']['duration'] / 60  # in minutes
+        except Exception as e:
+            print(f"⚠️ Retry {attempt + 1}: Error fetching travel time: {e}")
+            time.sleep(wait_time)
+    return None
+
+# --- Main loop ---
+records = []
+count = 0
+total = len(zcta_df) * len(provider_df)
+
+print(f"🚀 Starting driving time estimation for up to {total} pairs...")
+
+for i, zcta in zcta_df.iterrows():
+    origin = (zcta['lon'], zcta['lat'])
+    for j, provider in provider_df.iterrows():
+        dest = (provider['lon'], provider['lat'])
+        dist_miles = geodesic((zcta['lat'], zcta['lon']), (provider['lat'], provider['lon'])).miles
+
+        if dist_miles <= DISTANCE_THRESHOLD_MILES:
+            travel_time = get_drive_time(origin, dest)
+            records.append({
+                'from_zcta': zcta['ZCTA'],
+                'to_provider_id': provider['id'],
+                'drive_time_min': travel_time
+            })
+            print(f"✅ ZCTA {zcta['ZCTA']} → Provider {provider['id']} = {travel_time:.1f} min")
+        else:
+            print(f"⏩ Skipped (>{DISTANCE_THRESHOLD_MILES} mi): ZCTA {zcta['ZCTA']} → Provider {provider['id']}")
+
+        count += 1
+        if count % 100 == 0:
+            print(f"🔄 Progress: {count:,} / {total:,} pairs...")
+
+# --- Save results ---
+drive_df = pd.DataFrame(records)
+
+try:
+    drive_df.to_csv(output_path, index=False)
+    print(f"\n✅ Saved results to {output_path} — total valid routes: {len(drive_df)}")
+except Exception as e:
+    print(f"❌ Error saving file: {e}")
