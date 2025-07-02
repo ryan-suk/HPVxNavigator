@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/78e6b4c2-d8d9-40a5-9522-dc105f9361ce" width="500" alt="EmpowerHPVx Logo"/>
+  <img src="https://github.com/user-attachments/assets/78e6b4c2-d8d9-40a5-9522-dc105f9361ce" width="400" alt="EmpowerHPVx Logo"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/62cf46fc-ab4a-4e5a-8989-ca2d4228237f" width="400" alt="EmpowerHPVx Logo"/>
+  <img src="https://github.com/user-attachments/assets/62cf46fc-ab4a-4e5a-8989-ca2d4228237f" width="300" alt="EmpowerHPVx Logo"/>
 </p>
 
 # HPVx Navigator
