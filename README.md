@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/62cf46fc-ab4a-4e5a-8989-ca2d4228237f" width="300" alt="EmpowerHPVx Logo"/>
+  <img src="https://github.com/user-attachments/assets/62cf46fc-ab4a-4e5a-8989-ca2d4228237f" width="400" alt="EmpowerHPVx Logo"/>
 </p>
 
 # HPVx Navigator
@@ -14,9 +14,14 @@
 
 ## >> 🤖 To check the "State Focus Hub: GA & NC" >>> 👉[Click here](https://github.com/ryan-suk/HPVxNavigator-GA-NC)
 
-## 👥 Principal Investigator
+## 👥 Investigators
 
 - Ryan Suk, PhD — Emory University (Principal Investigator)
+- Jessica Wells, PhD — Emory University
+- Young-Rock Hong, PhD — Emory University
+- Cici Bauer, PhD — The University of Texas Health Science Center
+- Paula Cuccaro, PhD — The University of Texas Health Science Center
+- Alexander Tsai, MD PhD — Massachusetts General Hospital/Harvard Medical School
 
 ## 🔑 Core Features
 
