@@ -1,7 +1,5 @@
 # 📍 Spatial Accessibility to VFC Providers (2SFCA Analysis)
 
-**HPVx Navigator | ACS-Funded HPV Vaccination Project**
-
 This repository contains geospatial analysis code, data, and visualizations for measuring spatial access to **Vaccines for Children (VFC) providers** across different states at the ZIP Code Tabulation Areas (ZCTAs) level. This effort supports equitable HPV vaccination strategies through data-driven mapping of healthcare availability.
 
 ---
